@@ -59,8 +59,8 @@
 /* Responsiveness for Iphone 14 and 15 */
 @media screen and (max-width: 576px) {
   /* navbar style start  */
-  .navbar {
-    border: 5px solid red;
+  .header-border {
+    border-bottom: 1px solid black;
   }
   /* navbar style end   */
   /* banner style start  */
