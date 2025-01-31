@@ -26,8 +26,17 @@
 .color--bg-transparent {
   background-color: transparent;
 }
+.color--bg-card {
+  background-color: #f9df8a;
+}
 .color--yellow {
   color: #ffdc26;
+}
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .margin-90-percent {
@@ -49,12 +58,24 @@
 
 /* Responsiveness for Iphone 14 and 15 */
 @media screen and (max-width: 576px) {
+  /* navbar style start  */
+  .navbar {
+    border: 5px solid red;
+  }
+  /* navbar style end   */
+  /* banner style start  */
+  .banner {
+    margin-top: 10px;
+    height: 550px;
+    /* padding-top: 10px; */
+  }
   .banner-left {
     font-family: "ADLaM Display", sans-serif;
     width: 100%;
     /* border: 2px solid red; */
   }
   .left-title {
+    /* margin-top: 1px; */
     font-size: 30px;
     padding-bottom: 10px;
   }
@@ -76,4 +97,29 @@
     width: 100%;
     top: -80px;
   }
+  /* banner style end  */
+
+  /* categories style start  */
+  .categories-container {
+    /* width: 90%; */
+    /* margin: 0px auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .categories-title {
+    font-family: "ADLaM Display", sans-serif;
+    font-size: 24px;
+  }
+  .card-title {
+    font-family: "ADLaM Display", sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .card-desc {
+    font-family: "Sora", sans-serif;
+    font-size: 14px;
+  }
+  /* categories style end  */
 }
