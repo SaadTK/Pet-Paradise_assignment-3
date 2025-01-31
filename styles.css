@@ -1,3 +1,21 @@
+/* google font sora */
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+/* Google font ADLaM */
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+
+.sora-regular {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.adlam-regular {
+  font-family: "ADLaM Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .color--bg-light-orange {
   background-color: #fff9f4;
   /* background-color: red; */
@@ -16,20 +34,46 @@
   width: 90%;
   margin: 0px auto;
 }
-
-/* google font sora */
-@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
-.sora-regular {
-  font-family: "Sora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.test-red {
+  /* background-color: red; */
+  border: 2px solid red;
+}
+.test-green {
+  /* background-color: red; */
+  border: 2px solid green;
+}
+.test-blue {
+  /* background-color: red; */
+  border: 2px solid blue;
 }
 
-/* Google font ADLaM */
-@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
-.adlam-regular {
-  font-family: "ADLaM Display", serif;
-  font-weight: 400;
-  font-style: normal;
+/* Responsiveness for Iphone 14 and 15 */
+@media screen and (max-width: 576px) {
+  .banner-left {
+    font-family: "ADLaM Display", sans-serif;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+  .left-title {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .left-desc {
+    width: 90%;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 13px;
+    opacity: 70%;
+  }
+  .left-btn {
+    width: 130px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .right-img {
+    width: 100%;
+    top: -80px;
+  }
 }
