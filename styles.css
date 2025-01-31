@@ -1,0 +1,35 @@
+.color--bg-light-orange {
+  background-color: #fff9f4;
+  /* background-color: red; */
+}
+.color--bg-yellow {
+  background-color: #ffdc26;
+}
+.color--bg-transparent {
+  background-color: transparent;
+}
+.color--yellow {
+  color: #ffdc26;
+}
+
+.margin-90-percent {
+  width: 90%;
+  margin: 0px auto;
+}
+
+/* google font sora */
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+.sora-regular {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Google font ADLaM */
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+.adlam-regular {
+  font-family: "ADLaM Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
