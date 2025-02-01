@@ -43,6 +43,10 @@
   width: 90%;
   margin: 0px auto;
 }
+.margin-80-percent {
+  width: 80%;
+  margin: 0px auto;
+}
 
 .products-desc-text {
   color: #111111;
@@ -51,7 +55,7 @@
 
 .test-red {
   /* background-color: red; */
-  border: 2px solid red;
+  border: 1px solid #ffdc26;
 }
 .test-green {
   /* background-color: red; */
@@ -60,6 +64,24 @@
 .test-blue {
   /* background-color: red; */
   border: 2px solid blue;
+}
+
+/* animation for bouncing ball  */
+@keyframes roll {
+  0% {
+    transform: translateX(-100%); /* Start off the screen (left side) */
+  }
+  50% {
+    transform: translateX(100%); /* Moves to the right, off the screen */
+  }
+  100% {
+    transform: translateX(-100%); /* Moves back to the left side */
+  }
+}
+
+/* The ball will use this class to roll back and forth */
+.animate-roll {
+  animation: roll 5s infinite ease-in-out;
 }
 
 /* Responsiveness for Iphone 14 and 15 */
@@ -198,6 +220,7 @@
 
   /* Customer experience end */
 
+  /* Everyday low price start */
   .low-price-card-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -267,7 +290,76 @@
     position: relative;
     right: 120px;
   }
+  /* newsletter style start  */
+  .newsletter {
+    margin-top: 370px;
+  }
+  .newsletter-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
 
-  /* Everyday low price start */
+  .newsletter-left,
+  .newsletter-right {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .newsletter-title {
+    font-size: 22px;
+  }
+  .newsletter-desc {
+    font-size: 16px;
+  }
+  .newsletter-img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  .newsletter-btn {
+    background-color: #ffdc26;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
+    /* max-width: 200px; */
+  }
+  /* newsletter style end  */
+
+  /* footer style start  */
+  .footer-section {
+    width: 100%;
+    /* background-color: rgb(255, 220, 38, 50%); */
+
+    height: 800px;
+  }
+  .footer-container {
+    margin-top: 270px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* border: 2px solid red; */
+    gap: 15px;
+  }
+  .footer-middle {
+    margin-top: 30px;
+  }
+  .footer-right-title {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  /* footer style end  */
 }
 /* Everyday low price end */

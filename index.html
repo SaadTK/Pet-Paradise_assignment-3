@@ -61,9 +61,17 @@
       </nav>
     </header>
     <main>
+      <!-- Ball Image -->
+      <img
+        class="z-10 ball absolute animate-roll w-[50px] h-[50px]"
+        src="assets/ball.png"
+        alt="Rolling Ball"
+      />
       <!-- Banner Section -->
-      <section class="banner">
-        <div class="mt-20 banner-container w-[90%] mx-auto h-[650px]">
+      <section class="banner relative">
+        <div
+          class="mt-20 banner-container w-[90%] mx-auto h-[650px] relative overflow-hidden"
+        >
           <!-- Left Content -->
           <div class="banner-left w-[55%] relative z-10 top-[20px]">
             <h1 class="left-title text-[50px] adlam-regular">
@@ -71,6 +79,7 @@
               Because They Deserve<br />
               the Best
             </h1>
+
             <p class="left-desc pt-[15px] text-[20px] pb-[24px] opacity-70">
               Discover a world of treats, toys, and essentials handpicked for
               your furry friends. Shop now and make tails wag with joy!
@@ -716,17 +725,97 @@
         </div>
       </section>
     </main>
-    <!-- footer style  -->
-    <!-- <footer>
-      <div class="test-red footer-section w-[640px] bg-orange-100">
-        <div class="flex items-center">
-          <img class="w-[40px]" src="assets/logo-header.png" alt="Logo" />
 
-          <p class="hidden lg:block text-[26px] font-normal text-black">
-            Browse<span class="text-yellow-500">4</span>Pets
+    <section class="newsletter sora-regular z-10 relative top-[200px]">
+      <div
+        class="-mt-[90px] bg-orange-100 newsletter-container margin-80-percent flex gap-[120px] items-center justify-center"
+      >
+        <div class="newsletter-left">
+          <img
+            class="newsletter-img w-auto h-[400px] mt-[40px] mb-[40px]"
+            src="assets/cute-pet-mid.png"
+            alt="cute dog"
+          />
+        </div>
+        <div class="newsletter-right">
+          <p class="newsletter-title adlam-regular text-[36px] mb-[20px]">
+            Get Pawsome News
           </p>
+          <p class="newsletter-desc text-[20px] mb-[40px]">
+            Exclusive training tips, ticks, product deals and more.
+          </p>
+          <input
+            type="text"
+            class="newsletter-input h-[50px] w-[450px] rounded-[8px] mb-[30px]"
+            placeholder="   Enter email..."
+          />
+          <br />
+          <button
+            class="btn newsletter-btn w-[150px] h-[40px] text-[20px] bg-yellow-300 pt-[10px] pb-[10px] pl-[25] pr-[25]"
+          >
+            Subscribe
+          </button>
         </div>
       </div>
-    </footer> -->
+    </section>
+    <!-- footer style  -->
+    <footer>
+      <div
+        class="sora-regular test-red footer-section h-[650px] bg-[#FFDC26] bg-opacity-50 margin-90-percent"
+      >
+        <div
+          class="footer-container mt-[360px] grid grid-cols-3 gap-[150px] items-center margin-80-percent"
+        >
+          <div class="footer-left">
+            <div class="flex items-center">
+              <img
+                class="w-[40px] filter grayscale brightness-0 mr-[12px]"
+                src="assets/logo-header.png"
+                alt="Logo"
+              />
+
+              <p class="footer-left-title text-[26px] font-normal">
+                Browse<span class="text-yellow-500">4</span>Pets
+              </p>
+            </div>
+
+            <p class="footer-left-desc text-[20px] opacity-70 mt-[24px]">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends
+            </p>
+          </div>
+          <div class="footer-middle">
+            <p class="footer-middle-links mb-[25px] text-[20px]">Find a Pet</p>
+            <p class="footer-middle-links mb-[25px] text-[20px]">Breeds</p>
+            <p class="footer-middle-links mb-[25px] text-[20px]">Contact Us</p>
+          </div>
+          <div class="footer-right">
+            <p class="footer-right-title text-[16px]">Follow Us</p>
+            <div class="footer-right-icons flex gap-[30px] mt-[30px]">
+              <img
+                class="footer-right-icon w-[23px] h-[23px]"
+                src="assets/facebook.png"
+                alt=""
+              />
+              <img
+                class="footer-right-icon w-[23px] h-[23px]"
+                src="assets/instagram.png"
+                alt=""
+              />
+              <img
+                src="assets/linkedin.png"
+                alt=""
+                class="footer-right-icon w-[23px] h-[23px]"
+              />
+              <img
+                src="assets/youtube.png"
+                alt=""
+                class="footer-right-icon w-[23px] h-[23px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
